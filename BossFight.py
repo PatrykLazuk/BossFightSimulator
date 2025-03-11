@@ -1,11 +1,6 @@
 import random
 from collections import Counter
 
-"""def valueRandomizer(value,percentage):
-    minValue = value - (percentage/100)*value
-    maxValue = value + (percentage/100)*value
-    return random.randint(minValue,maxValue)"""
-
 def rollDice(min,max):
     return random.randint(min,max)
 
@@ -23,7 +18,7 @@ weaponsList = list(weapons.keys())
 # Losowanie imienia i punktów życia dla Bossa
 bossNamesPrefixes = ['Mighty ','Vile ','Enormous ','Swift ','Devilish ']
 bossNamesSuffixes = [' the Destroyer',' the Warmonger',' the Cruel', ' the Allmighty',' the Marked One']
-bossNames = ['Diablo','Baal','Mephisto','Duriel','Nephilim']
+bossNames = ['Diablo','Baal','Mephisto','Duriel','Grzegorz']
 
 bossName = random.choice(bossNamesPrefixes)+random.choice(bossNames)+random.choice(bossNamesSuffixes)
 bossHitpoints = random.randint(100,300)
